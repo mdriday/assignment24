@@ -1,0 +1,322 @@
+* {
+	padding: 0;
+	margin: 0;
+
+}
+
+.max {
+	max-width: 1180px;
+	margin: auto;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+/* header css */
+.header-top {
+	background-color: #95a5a6;
+	height: 30px;
+
+}
+
+.h-top-left {
+	width: 50%;
+}
+
+.h-top-left span {
+	margin-left: 20px;
+	margin-right: 5px;
+	color: #3affff;
+	font-size: 20px;
+}
+
+.h-top-left h5 {
+	display: inline-block;
+}
+
+.h-top-right {
+	width: 50%;
+}
+
+.h-top-right ul {
+	text-align: right;
+}
+
+.h-top-right ul li {
+	display: inline-block;
+}
+
+.h-top-right ul li a {
+	display: inline-block;
+	padding: 5px 8px;
+	font: 20px;
+	color: #2980b9;
+	transition: .5s;
+}
+
+.h-top-right ul li a:hover {
+	color: #fff;
+}
+
+.header-section {
+	background-color: black;
+	color: #fff;
+}
+
+.header-logo {
+	width: 30%;
+}
+
+.header-logo img {width: 116px;position: absolute;top: 85px;left: 177px;height: 20px;}
+
+.header-logo h2 {
+	color: #fff;
+	display: inline-block;
+	padding-top: 11px;
+	font-size: 40px;
+	transform: rotate(-2deg);
+	position: relative;
+}
+/* .header-logo h2::before {
+	content: "\e900";
+	font-family: "iconmoon;
+	color: red;
+
+  }	 */
+
+
+
+
+.header-menu {
+	width: 60%;
+
+}
+
+.header-menu ul {
+	text-align: right;
+}
+
+.header-menu ul li {
+	display: inline-block;
+	position: relative;
+}
+
+.header-menu ul li a {
+	display: block;
+	color: #edd6d6;
+	padding: 0 20px;
+	font-size: 25px;
+	line-height: 90px;
+	font-weight: 600;
+	transition: .4s;
+	position: relative;
+}
+.header-menu ul li .a1::before {
+	content: "";
+	position: absolute;
+	top: 65px;
+	left: 20px;
+	width: 0;
+	height: 2px;
+	background-color: #fff;
+	visibility: hidden;
+	opacity: 0;
+	transition: .4s;
+}
+.header-menu ul li .a1:hover::before{
+	visibility: visible;
+	opacity: 1;
+	width: 62%;
+}
+
+.header-menu ul li a:hover {}
+
+.header-menu ul li ul{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 200px;
+	background-color: transparent;
+	visibility: hidden; opacity: 0;
+	transition: .4s;
+	background-color: rgba(0, 0, 0, .3);
+
+	text-align: center;
+}
+.header-menu ul li ul li{
+	display: block;
+}
+.header-menu ul li ul li a{
+	display: block;
+	border-bottom: 1px solid #ddd;
+	line-height: 50px;
+	padding: 0;
+}
+.header-menu ul li ul li a:first-child{
+	border-top: 1px solid #ddd;
+}
+.header-menu ul li:hover ul{
+	visibility: visible;
+	opacity: 1;
+}
+
+/* SLIDER-SECTION */
+.slider-section {
+	background-image: url(https://asset.wallpaperhunt.net/5633-art-mountain-wallpaper-7680x4320-161178042171408_preview_900.jpg);
+	padding: 100px;
+	height: 500px;
+	box-sizing: border-box;
+	background-size: cover;
+	background-position: center center;
+}
+
+.slider-section h1 {
+	font-size: 50px;
+	padding: 10px 0;
+}
+
+.slider-section h5 {
+	font-size: 21px;
+	font-weight: 100;
+}
+
+.slider-section a {
+	display: inline-block;
+	margin-top: 20px;
+	color: #fff;
+	background: #000;
+	padding: 15px 30px;
+	font-size: 20px;
+	font-weight: 700;
+	border-radius: 5px;
+	position: relative;
+	z-index: 1;
+}
+.slider-section a:hover{
+	color: black;
+
+}
+.slider-section a::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 100%;
+	width:100%;
+	height: 0;
+	background-color: #fff;
+	z-index: -1;
+	border-radius: 5px;
+	transition: .4s;
+}
+.slider-section a:hover::before{
+	height: 100%;
+}
+/* content section */
+.content-section {
+
+	background: #444444;
+	padding: 70px 0;
+}
+
+.content-left {
+	width: 65%;
+	margin-right: 3%;
+}
+
+.content-left p {
+	color: #fff;
+	font-size: 24px;
+	line-height: 45px;
+}
+
+.content-right {
+	width: 30%;
+	margin-left: 2%;
+}
+
+.content-right img {
+	width: 222px;
+}
+
+/* team section */
+.team-section {
+	background-color: #458b83;
+	padding: 50px 0 80px 0;
+}
+
+.team-section h1 {
+	text-align: center;
+	color: #eee;
+	font-size: 50px;
+	padding-bottom: 30px;
+}
+
+.team-list {
+	width: 30%;
+	margin-left: 5%;
+}
+
+.team-list:first-child {
+	margin: 0;
+}
+
+.team-list {}
+
+.team-list img {}
+
+.team-list ul {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.team-list ul li {
+	display: inline-block;
+}
+
+.team-list ul li a {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	background: #000;
+	color: #fff;
+	border-radius: 50%;
+	transition: .4s;
+}
+
+.team-list ul li a:hover {
+	color: #000;
+	background: #fff;
+}
